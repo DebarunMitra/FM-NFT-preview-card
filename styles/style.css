@@ -1,0 +1,109 @@
+:root{
+    --Primary-Soft-Blue: hsl(215, 51%, 70%);
+    --Primary-Cyan: hsl(178, 100%, 50%);
+    --Main-BG: hsl(217, 54%, 11%);
+    --Card-BG: hsl(216, 50%, 16%);
+    --Line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--Main-BG);
+}
+
+hr{
+    color: var(--Line);
+    border: 0;
+    border-top: 1px solid var(--Line);
+}
+
+.card{
+    margin: 8rem auto;
+    background-color: var(--Card-BG);
+    width: 16rem;
+    height: 26.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 25px 15px 10px #021024;
+    /* box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, 
+                rgba(0, 0, 0, 0.3) -10px 10px, 
+                rgba(0, 46, 170, 0.2) -15px 15px, 
+                rgba(0, 0, 0, 0.1) -10px 10px, 
+                rgba(0, 0, 0, 0.05) -0 0; */
+}
+
+.card-thumbnail-container{
+    padding: 6%;
+}
+.card-thumbnail{
+    border-radius: 8px;
+}
+.card-content{
+    padding: 0 6%;
+}
+
+.card-content h4{
+    padding: 0;
+    margin: -5px 0 0 0;
+    color: var(--White);
+    font-weight: bold;
+}
+
+.card-description p{
+    color: var(--Primary-Soft-Blue);
+    font-size: 0.8rem;
+}
+
+.card-value-and-time p{
+    font-size: 0.8rem; 
+}
+
+.card-currency-icon, .card-time-icon{
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.card-value-and-time p span:nth-child(1){
+    color: var(--Primary-Cyan);
+    margin-right: 70px;
+}
+
+.card-value-and-time p span:nth-child(3){
+    color: var(--Primary-Soft-Blue);
+}
+
+.card-value-creation-by p{
+    font-size: 0.8rem;
+}
+
+.card-value-creation-by p span:nth-child(1){
+    position: relative;
+    top: -5px;
+    background-color: var(--White);
+    padding: 4px 1px;
+    border-radius: 20px;
+}
+
+.card-value-creation-by p span:nth-child(1) img{
+    position: relative;
+    top: 6.4px;
+}
+
+.card-value-creation-by p span:nth-child(2){
+    position: relative;
+    top: -5px;
+    left: 8px;
+    color: var(--Primary-Soft-Blue);
+}
+
+strong{
+    color: var(--White);
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+
